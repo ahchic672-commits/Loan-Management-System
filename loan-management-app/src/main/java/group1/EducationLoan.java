@@ -12,13 +12,6 @@ package group1;
 			
 					
 				}
-			
-			public static void main(String[] args){
-				PersonalLoan loan = new PersonalLoan(500000,8,36);
-				loan.displayLoanDetails();
-				
-				System.out.println("Interent only: " + loan.calculateInterest());
-				System.out.println("Total Payable: " + loan.calculateTotalPayable());}
-			}
+	}
 
 
