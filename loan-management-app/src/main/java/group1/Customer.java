@@ -1,79 +1,115 @@
 package group1;
-
-import java.math.BigDecimal;
+import java.util.Scanner;
 
 public class Customer {
-	String customerid;
-	String firstname;
-	String lastname;
-	String nationalid;
-	String emailaddress;
-	String physicaladdress;
-	String employmentstatus;
-	String phonenumber;
-	BigDecimal monthlyincome;
-	String customerstatus;
+	Scanner scanner=new Scanner(System.in);
 	
-	public Customer(String customerid, String firstname, String lastname, String nationalid, 
-			String emailaddress, String physicaladdress, String employmentstatus, String phonenumber, BigDecimal monthlyincome, String customerstatus) {
-		this.customerid = customerid;
-		this.firstname = firstname;
-		this.lastname = lastname;
-		this.nationalid = nationalid;
-		this.emailaddress = emailaddress;
-		this.physicaladdress = physicaladdress;
-		this.employmentstatus = employmentstatus;
-		this.phonenumber = phonenumber;
-		this.monthlyincome = monthlyincome;
-		this.customerstatus = customerstatus;
+	String customerId;
+	String firstName;
+	String lastName;
+	String nationalId;
+	String emailAddress;
+	String physicalAddress;
+	String employmentStatus;
+	String phoneNumber;
+	Double monthlyIncome;
+	String customerStatus;
+	
+	public Customer(String customerId, String firstName, String lastName, String nationalId, 
+			String emailAddress, String physicalAddress, String employmentStatus, String phoneNumber, BigDecimal monthlyIncome, String customerStatus) {
+		this.customerId = customerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.nationalId = nationalId;
+		this.emailAddress = emailAddress;
+		this.physicalAddress = physicalAddress;
+		this.employmentStatus = employmentStatus;
+		this.phoneNumber = phoneNumber;
+		this.monthlyIncome = monthlyIncome;
+		this.customerStatus = customerStatus;
 		}
 		
 		public String getCustomerId() {
-			return customerid;
+			return customerId;
 		}
 		
 		public String getFirstName() {
-			return firstname;
+			return firstName;
 		}
 		
 		public String getLastName() {
-			return lastname;
+			return lastName;
 		}
 		
 		public String getPhoneNumber() {
-			return phonenumber;
+			return phoneNumber;
 		}
 		
 		public BigDecimal getMonthlyIncome() {
-			return monthlyincome;
+			return monthlyIncome;
 		}
 		
 		public String getEmailAddress() {
-			return emailaddress;
+			return emailAddress;
 		} 
 		
 		public String getNationalId() {
-			return nationalid;
+			return nationalId;
 		}
 		
 		public String getPhysicalAddress() {
-			return physicaladdress;
+			return physicalAddress;
 		}
 		
 		public String getCustomerStatus() {
-			return customerstatus;
+			return customerStatus;
 		}
 		
 		public String getEmploymentStatus() {
-			return employmentstatus;
+			return employmentStatus;
 		}
 		
-		
-		
-		public void setMonthlyIncome(BigDecimal monthlyincome) {
-			this.monthlyincome = monthlyincome;
+		public void setMonthlyIncome(Double monthlyIncome) {
+			this.monthlyIncome = monthlyIncome;
 		}
-		
+
+	    public void addCustomer(){
+			System.out.println("Enter First Name: ");
+			this.firstName=scanner.nextLine();
+
+			System.out.println("Enter Last Name: ");
+			this.lastName=scanner.nextLine();
+
+			System.out.println("Enter national ID: ");
+			this.nationalId=scanner.nextLine();
+			
+			System.out.println("Enter Phone number: ");
+			this.phoneNumber=scanner.nextLine();
+			
+			System.out.println("Enter Email Address: ");
+			this.emailAddress=scanner.nextLine();
+
+			System.out.println("Enter Physical Address: ");
+			this.physicalAddress=scanner.nextLine();
+			
+			System.out.println("Enter Employment Status: ");
+			this.employmentStatus=scanner.nextLine();
+			
+			System.out.println("Enter Monthly Income: ");
+			this.monthlyIncome=scanner.nextDouble();
+			scanner.nextLine();
+
+			this.customerStatus="ACTIVE";
+	
 		}
+
+		public void searchCustomer(){
+			//search customer
+		}
+
+		public void listAllCustomers(){
+			
+		}
+}
 
 		
