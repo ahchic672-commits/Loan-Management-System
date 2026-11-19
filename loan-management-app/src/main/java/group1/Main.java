@@ -8,6 +8,10 @@ public class Main{
 		
 		Customer cus1 = new Customer("C001","Johnny","Alubi","NID001","john@gmail.com","Mangochi","Employed","0999123456",new BigDecimal ("500000"),"Active"
 				);
+		PersonalLoan loan = new PersonalLoan(500000,8,36);
+				loan.displayLoanDetails();
+				
+				
 		
 	    System.out.println("Customer ID: " + cus1.getCustomerId());
 		System.out.println("Name " + cus1.getFirstName() + " " + cus1.getLastName());
@@ -18,7 +22,9 @@ public class Main{
 	    System.out.println("Customer Status: " + cus1.getCustomerStatus());
 	    System.out.println("National ID: " + cus1.getNationalId() );
 	    System.out.println("Employment Status: " + cus1.getEmploymentStatus());
-	    
+		
+	    System.out.println("Interent only: " + loan.calculateInterest());
+		System.out.println("Total Payable: " + loan.calculateTotalPayable());}
 	  
 		
 		}	
