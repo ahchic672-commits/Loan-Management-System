@@ -2,7 +2,7 @@ package group1;
 import java.util.Scanner;
 
 public class Customer {
-	Scanner scanner=new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in);
 	
 	private String customerId;
 	private String firstName;
@@ -12,11 +12,11 @@ public class Customer {
 	private String physicalAddress;
 	private String employmentStatus;
 	private String phoneNumber;
-	private Double monthlyIncome;
+	private double monthlyIncome;
 	private String customerStatus;
 	
 	public Customer(String customerId, String firstName, String lastName, String nationalId, 
-			String emailAddress, String physicalAddress, String employmentStatus, String phoneNumber, BigDecimal monthlyIncome, String customerStatus) {
+			String emailAddress, String physicalAddress, String employmentStatus, String phoneNumber, double monthlyIncome, String customerStatus) {
 		this.customerId = customerId;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -32,21 +32,41 @@ public class Customer {
 		public String getCustomerId() {
 			return customerId;
 		}
+
+		public void setCustomerId(String customerId){
+			this.customerId = customerId;
+		}
+
+		public double getMonthlyIncome() {
+			return monthlyIncome;
+		}
+
+		public void setMonthlyIncome(String monthlyIncome){
+			this.monthlyIncome = monthlyIncome;
+		}
 		
 		public String getFirstName() {
 			return firstName;
 		}
+
+		public void setFirstName(String firstName){
+			this.firstName = firstName;
+		}
 		
 		public String getLastName() {
 			return lastName;
+		}
+
+		public void setLastName(String lastName){
+			this.lastName = lastName;
 		}
 		
 		public String getPhoneNumber() {
 			return phoneNumber;
 		}
 		
-		public BigDecimal getMonthlyIncome() {
-			return monthlyIncome;
+		public void setPhoneNumnber(String phoneNumber){
+			this.phoneNumber = phoneNumber;
 		}
 		
 		public String getEmailAddress() {
