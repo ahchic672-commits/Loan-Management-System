@@ -3,13 +3,13 @@ package group1;
 
 	public class EducationLoan extends Loan{
 		private String passcode;
-		private String instituionName;
+		private String institutionName;
 		
 		
-		public EducationLoan(double principal,double interestRate,int repaymentPeriod,String passcode, String instituitionName) {
+		public EducationLoan(double principal,double interestRate,int repaymentPeriod,String passcode, String institutionName) {
 				super(principal,interestRate,repaymentPeriod);
 				this.passcode=passcode;
-				this.instituitionalName=instituitionalName;
+				this.instituitionName=instituitionName;
 			}
 			@Override
 			public double  calculateInterest() {
