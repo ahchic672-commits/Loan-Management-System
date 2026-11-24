@@ -138,7 +138,20 @@ public class Customer {
 			this.customerStatus="ACTIVE";
 	
 		}
-
+		public void viewCustomerInfo(){
+			System.out.println("Customer ID: " + getCustomerId());
+			System.out.println("Name " + getFirstName() + " " + getLastName());
+			System.out.println("Phone: " + getPhoneNumber());
+	    	System.out.println("Monthly Income: MKW " + getMonthlyIncome());
+	    	System.out.println("Email Address: " + getEmailAddress());
+	    	System.out.println("Physical Address: " + getPhysicalAddress());
+	    	System.out.println("Customer Status: " + getCustomerStatus());
+	    	System.out.println("National ID: " + getNationalId() );
+	    	System.out.println("Employment Status: " + getEmploymentStatus());
+	    	System.out.println("Interent only: " + calculateInterest());
+			System.out.println("Total Payable: " + calculateTotalPayable());
+			System.out.println("Loan detail:  "+ displayLoanDetails(););
+		}
 		public void searchCustomer(){
 			//search customer
 		}
