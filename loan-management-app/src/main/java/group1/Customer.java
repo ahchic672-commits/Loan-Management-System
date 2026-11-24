@@ -72,27 +72,43 @@ public class Customer {
 		public String getEmailAddress() {
 			return emailAddress;
 		} 
+
+		public void setEmailAddress(String emailAddress){
+			this.emailAddress = emailAddress;
+		}
 		
 		public String getNationalId() {
 			return nationalId;
+		}
+
+		public void setNationalId(String nationalId){
+			this.nationalId = nationalId;
 		}
 		
 		public String getPhysicalAddress() {
 			return physicalAddress;
 		}
+
+		public void setPhysicalAddress(String physicalAddress){
+			this.physicalAddress = physicalAddress;
+		}
 		
 		public String getCustomerStatus() {
 			return customerStatus;
+		}
+
+		public void setCustomerStatus(String customerStatus){
+			this.customerStatus = customerStatus;
 		}
 		
 		public String getEmploymentStatus() {
 			return employmentStatus;
 		}
-		
-		public void setMonthlyIncome(Double monthlyIncome) {
-			this.monthlyIncome = monthlyIncome;
-		}
 
+		public void setEmploymentStatus(String employmentStatus){
+			this.employmentStatus = employmentStatus;
+		}
+		
 	    public void addCustomer(){
 			System.out.println("Enter First Name: ");
 			this.firstName=scanner.nextLine();
