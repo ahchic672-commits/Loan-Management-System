@@ -13,7 +13,7 @@ package group1;
 			}
 			@Override
 			public double  calculateInterest() {
-				return principal  * (interestRate / 100) * repaymentPeriod;	
+				return principal  * (interestRate / 100) * (repaymentPeriod /12.0);	
 				}
 	}
 
